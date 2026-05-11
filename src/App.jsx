@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom'
 import { Menu } from 'lucide-react'
+import LandingPage from './pages/LandingPage'
 import Login from './pages/Login'
 import Register from './pages/Register'
 import MyAllocation from './pages/MyAllocation'
@@ -58,7 +59,7 @@ const AppContent = () => {
       )}
       <div className="main-app-content" style={{ flex: 1, overflow: 'hidden', position: 'relative' }}>
         <Routes>
-          <Route path="/" element={<Login />} />
+          <Route path="/" element={<LandingPage />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/register-company" element={<CreateCompany />} />
